@@ -1,0 +1,23 @@
+O que o código abaixo iria exibir se ele fosse parte de um programa válido?
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	int k = 4;
+
+	do
+		cout << " k = " << k << endl;
+
+	while (k++ < 5);
+
+	/* Foi inicializado uma variavel com valor 4
+	No corpo do cout imprime k = 4
+	No while k é 4 e menor que 5
+	mas como o incremento vem depois do k
+	o teste verifica a expressão antes do incremento
+	que é 4 < 5, mas depois o incremento entra em ação
+	e k = 5 acaba saindo na tela */
+}
