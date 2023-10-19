@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	int j = 5;
+
+	while (++j < 9)//Quando o ++ está na frente o valor já começa com incremento
+
+		cout << j++ << endl;
+
+	/* É inicializado uma variavel com valor 5
+	   no while seu valor passa para 6
+	   no corpo seu valor passa para 7
+	   mas quando volta para o teste vira 8
+	
+	   Então a saída do programa é 6 e 8*/
+}
